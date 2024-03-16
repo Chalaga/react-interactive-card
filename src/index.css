@@ -8,8 +8,8 @@ body {
   background-color: #131518;
 }
 
-/* @media (width < 576px) {
-  body {
-    background-color: red;
+@media (width < 576px) {
+  .Card {
+    width: auto;
   }
-} */
+}

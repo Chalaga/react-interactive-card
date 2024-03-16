@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = (width, backgroundcolor ) => {
     return (
-        <div style={width=width}>
+        <div className='Card' style={{width: width, backgroundColor: backgroundcolor}}>
             
         </div>
     )

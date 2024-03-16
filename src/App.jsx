@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <Card width={412} />
+    <Card width={412} backgroundColor='red'  />
     </>
   )
 }
