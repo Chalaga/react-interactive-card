@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ Review, info, src}) => {
+const Card = ({ Review, info, src, submitedreview}) => {
   return (
     <div className="Card">
       <div>
