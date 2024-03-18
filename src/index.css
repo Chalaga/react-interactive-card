@@ -6,10 +6,18 @@
 
 body {
   background-color: #131518;
+  min-height: 100vh;
 }
+
+.Card {
+  background: linear-gradient(90deg, rgba(24,30,39,1) 100%, rgba(35,42,52,1) 100%);
+  width: 412px;
+}
+
 
 @media (width < 576px) {
   .Card {
     width: auto;
+    background: linear-gradient(90deg, rgba(24,30,39,1) 100%, rgba(35,42,52,1) 100%);
   }
 }
