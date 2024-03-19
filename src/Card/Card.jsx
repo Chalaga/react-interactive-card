@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ Feedback, info, src, HandleOpenCard, setCount, SetReview }) => {
+const Card = ({ Feedback, info, src, setCount, SetReview }) => {
   return (
     <div className="Card">
       <div>
@@ -12,7 +12,6 @@ const Card = ({ Feedback, info, src, HandleOpenCard, setCount, SetReview }) => {
         <button
           onClick={() => {
             setCount(1);
-            SetReview(false);
           }}
         >
           1
@@ -20,7 +19,6 @@ const Card = ({ Feedback, info, src, HandleOpenCard, setCount, SetReview }) => {
         <button
           onClick={() => {
             setCount(2);
-            SetReview(false);
           }}
         >
           2
@@ -28,7 +26,6 @@ const Card = ({ Feedback, info, src, HandleOpenCard, setCount, SetReview }) => {
         <button
           onClick={() => {
             setCount(3);
-            SetReview(false);
           }}
         >
           3
@@ -36,7 +33,6 @@ const Card = ({ Feedback, info, src, HandleOpenCard, setCount, SetReview }) => {
         <button
           onClick={() => {
             setCount(4);
-            SetReview(false);
           }}
         >
           4
@@ -44,13 +40,16 @@ const Card = ({ Feedback, info, src, HandleOpenCard, setCount, SetReview }) => {
         <button
           onClick={() => {
             setCount(5);
-            SetReview(false);
           }}
         >
           5
         </button>
       </div>
-      <input type="submit" placeholder="SUBMIT" onClick={HandleOpenCard} />
+      <input
+        type="submit"
+        placeholder="SUBMIT"
+        onClick={() => SetReview(false)}
+      />
     </div>
   );
 };

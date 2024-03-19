@@ -9,9 +9,9 @@ function App() {
   // console.log(count);
   // console.log(Review);
 
-  const HandleOpenCard = () => {
-    SetReview(true);
-  };
+  // const HandleOpenCard = () => {
+  //   SetReview(true);
+  // };
 
   useEffect(() => {}, []);
 
@@ -22,7 +22,7 @@ function App() {
           <Card
             SetReview={SetReview}
             setCount={setCount}
-            HandleOpenCard={HandleOpenCard}
+            // HandleOpenCard={HandleOpenCard}
             src={Star}
             Feedback="How did we do?"
             info="Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!"
