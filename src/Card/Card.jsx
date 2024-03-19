@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ Feedback, info, src, setCount, SetReview, }) => {
+const Card = ({ Feedback, info, src, setCount, SetReview }) => {
   return (
     <div className="Card">
       <div>
@@ -45,7 +45,8 @@ const Card = ({ Feedback, info, src, setCount, SetReview, }) => {
           5
         </button>
       </div>
-      <input className="input"
+      <input
+        className="input"
         type="submit"
         placeholder="SUBMIT"
         onClick={() => SetReview(false)}

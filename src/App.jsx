@@ -2,20 +2,11 @@ import { useEffect, useState } from "react";
 import Card from "./Card/Card";
 import Star from "./assets/Star.svg";
 import RevewCard from "./RevewCard/RevewCard";
-import Onlinepayment from "./assets/Onlinepayment.svg"
+import Onlinepayment from "./assets/Onlinepayment.svg";
 
 function App() {
   const [count, setCount] = useState(0);
   const [Review, SetReview] = useState(true);
-
-  // console.log(count);
-  // console.log(Review);
-
-  // const HandleOpenCard = () => {
-  //   SetReview(true);
-  // };
-
-
   return (
     <>
       {Review ? (
@@ -23,7 +14,6 @@ function App() {
           <Card
             SetReview={SetReview}
             setCount={setCount}
-            // HandleOpenCard={HandleOpenCard}
             src={Star}
             Feedback="How did we do?"
             info="Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!"
