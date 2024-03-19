@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 import Card from "./Card/Card";
 import Star from "./assets/Star.svg";
 import RevewCard from "./RevewCard/RevewCard";
+import Onlinepayment from "./assets/Onlinepayment.svg"
 
 function App() {
   const [count, setCount] = useState(0);
   const [Review, SetReview] = useState(true);
+
   // console.log(count);
   // console.log(Review);
 
@@ -13,7 +15,6 @@ function App() {
   //   SetReview(true);
   // };
 
-  useEffect(() => {}, []);
 
   return (
     <>
@@ -34,7 +35,7 @@ function App() {
             point={count}
             thankyou="Thank you!"
             paragraph="We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!"
-            logosrc={Star}
+            logosrc={Onlinepayment}
           />
         </>
       )}

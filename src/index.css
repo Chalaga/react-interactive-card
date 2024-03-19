@@ -68,6 +68,12 @@ button {
   border-radius: 50%;
 }
 
+button:hover {
+  background-color: #7C8798;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
 .input {
   margin-bottom: 32px;
   width: 100%;
@@ -80,6 +86,55 @@ button {
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 2px;
+}
+
+.input:hover {
+  background-color: #FFFFFF;
+  color: #FC7614;
+  cursor: pointer;
+}
+
+.Reviewcard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.Reviewcard img {
+  width: 162px;
+  height: 108px;
+  margin-top: 45px;
+  margin-bottom: 32px;
+}
+
+.Reviewcard h1 {
+  background-color: #262e38;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fc7614;
+  padding: 4px 19px 4px 20px;
+  border-radius: 22px;
+  margin-bottom: 24px;
+}
+
+.Reviewcard h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+
+.Reviewcard p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #969FAD;
+  margin-bottom: 45px;
+  padding-inline: 32px;
 }
 
 @media (width < 413px) {
@@ -107,11 +162,6 @@ button {
     padding-bottom: 24px;
   }
 
-  .Reviewcard {
-    width: auto;
-    margin-inline: 24px;
-  }
-
   .ButtonContainer {
     margin-bottom: 24px;
   }
@@ -137,5 +187,44 @@ button {
     font-weight: 700;
     line-height: 17px;
     letter-spacing: 1.9px;
+  }
+
+  .Reviewcard {
+    width: auto;
+    margin-inline: 24px;
+  }
+  .Reviewcard img {
+    width: 144px;
+    height: 96px;
+    margin-bottom: 24px;
+    margin-top: 34px;
+  }
+
+  .Reviewcard h1 {
+    background-color: #262e38;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #fc7614;
+    padding: 5px 12px;
+    border-radius: 22px;
+    margin-bottom: 24px;
+  }
+
+  .Reviewcard h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .Reviewcard p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 37px;
+    color: #969fad;
+    text-align: center;
   }
 }
