@@ -1,21 +1,56 @@
 import React from "react";
 
-const Card = ({ Review, info, src, submitedreview}) => {
+const Card = ({ Feedback, info, src, HandleOpenCard, setCount, SetReview }) => {
   return (
     <div className="Card">
       <div>
         <img src={src} />
-        <h1>{Review}</h1>
+        <h1>{Feedback}</h1>
         <p>{info}</p>
       </div>
       <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
+        <button
+          onClick={() => {
+            setCount(1);
+            SetReview(false);
+          }}
+        >
+          1
+        </button>
+        <button
+          onClick={() => {
+            setCount(2);
+            SetReview(false);
+          }}
+        >
+          2
+        </button>
+        <button
+          onClick={() => {
+            setCount(3);
+            SetReview(false);
+          }}
+        >
+          3
+        </button>
+        <button
+          onClick={() => {
+            setCount(4);
+            SetReview(false);
+          }}
+        >
+          4
+        </button>
+        <button
+          onClick={() => {
+            setCount(5);
+            SetReview(false);
+          }}
+        >
+          5
+        </button>
       </div>
-      <input type="submit" placeholder="SUBMIT" />
+      <input type="submit" placeholder="SUBMIT" onClick={HandleOpenCard} />
     </div>
   );
 };
