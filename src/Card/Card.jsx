@@ -4,11 +4,11 @@ const Card = ({ Feedback, info, src, setCount, SetReview }) => {
   return (
     <div className="Card">
       <div>
-        <img src={src} />
+        <img className="star" src={src} />
         <h1>{Feedback}</h1>
         <p>{info}</p>
       </div>
-      <div>
+      <div className="ButtonContainer">
         <button
           onClick={() => {
             setCount(1);
@@ -45,7 +45,7 @@ const Card = ({ Feedback, info, src, setCount, SetReview }) => {
           5
         </button>
       </div>
-      <input
+      <input className="input"
         type="submit"
         placeholder="SUBMIT"
         onClick={() => SetReview(false)}
